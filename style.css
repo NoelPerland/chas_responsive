@@ -15,16 +15,34 @@ header {
 }
 
 nav {
-  text-align: center;
-  padding: 10px;
+  display: flex;
 }
 
 nav a {
-  color: #fff;
+  margin: 20px;
   text-decoration: none;
-  margin: 0 20px;
+  color: rgb(255, 255, 255);
 }
 
+nav i {
+  font-size: xx-large;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
 main {
   display: flex;
   justify-content: center;
